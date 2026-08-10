@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeongminsang33-design.github.io/Jung-MinSang/sitemap.xml

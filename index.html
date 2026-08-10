@@ -1,40 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>정민상 | 동국대 바이브 코딩 부트캠프</title>
+    <meta name="description" content="동국대학교 융합에너지신소재공학과 정민상입니다. 불편함을 편리함으로 바꾸는 개발자를 지향합니다.">
+    <meta name="author" content="정민상">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jeongminsang33-design.github.io/Jung-MinSang/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="정민상">
+    <meta property="og:title" content="정민상 | 동국대 바이브 코딩 부트캠프">
+    <meta property="og:description" content="동국대학교 융합에너지신소재공학과 정민상입니다. 불편함을 편리함으로 바꾸는 개발자를 지향합니다.">
+    <meta property="og:url" content="https://jeongminsang33-design.github.io/Jung-MinSang/">
+    <meta property="og:image" content="https://jeongminsang33-design.github.io/Jung-MinSang/img/me.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="정민상 | 동국대 바이브 코딩 부트캠프">
+    <meta name="twitter:description" content="동국대학교 융합에너지신소재공학과 정민상입니다. 불편함을 편리함으로 바꾸는 개발자를 지향합니다.">
+    <meta name="twitter:image" content="https://jeongminsang33-design.github.io/Jung-MinSang/img/me.png">
+
+    <link rel="icon" href="img/me.png" type="image/png">
+    <meta name="theme-color" content="#6C5CE7">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4df60ed6fa.js" crossorigin="anonymous"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "정민상",
+      "alternateName": "MinSang Jung",
+      "url": "https://jeongminsang33-design.github.io/Jung-MinSang/",
+      "image": "https://jeongminsang33-design.github.io/Jung-MinSang/img/me.png",
+      "email": "mailto:jeongminsang33@gmail.com",
+      "jobTitle": "동국대 바이브 코딩 부트캠프",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "동국대학교"
+      },
+      "sameAs": [
+        "https://github.com/jeongminsang33-design",
+        "https://www.instagram.com/m1nsang2"
+      ]
+    }
+    </script>
 </head>
   <body>
     <main class="card">
       <header>
-        <img class="avatar" src="me.png" alt="정민상 프로필 사진" />
+        <img class="avatar" src="img/me.png" width="160" height="160" alt="정민상 프로필 사진" />
     <h1>정민상</h1>
-    <p class="role">동국대 바이브 코팅 부트캠프</p>
+    <p class="role">동국대 바이브 코딩 부트캠프</p>
   </header>
 
   <section class="bio">
     <p>ㅎㅎ 안녕하세요. <i class="fa-solid fa-dragon" aria-hidden="true"></i></p>
   </section>
 
-  <nav class="links">
-    <a href="https://github.com/jeongminsang33-design" target="_blank">GitHub</a>
-    <a href="https://www.instagram.com/m1nsang2" target="_blank">Instagram</a>
+  <nav class="links" aria-label="소셜 링크">
+    <a href="https://github.com/jeongminsang33-design" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.instagram.com/m1nsang2" target="_blank" rel="noopener noreferrer">Instagram</a>
   </nav>
 
-  <button class="btn" id="contactBtn">연락처 보기</button>
-  <footer> 2026 MinSang Jung</footer>
+  <button class="btn" id="contactBtn" type="button" aria-haspopup="dialog" aria-controls="modal">연락처 보기</button>
+  <footer>© 2026 MinSang Jung</footer>
   </main>
-  <div class="modal" id="modal">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal__box">
-    <h2>연락처</h2>
-    <p>jeongminsang33@gmail.com</p>
-      <button id="closeBtn">닫기</button>
+    <h2 id="modalTitle">연락처</h2>
+    <p><a href="mailto:jeongminsang33@gmail.com">jeongminsang33@gmail.com</a></p>
+      <button id="closeBtn" type="button">닫기</button>
   </div>
   </div>
   <script src="script.js"></script>
