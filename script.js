@@ -5,3 +5,12 @@ btn.addEventListener('click', () => {title.textContent = '정민상 그는 2001�
 const modal = document.querySelector('#modal');
 document.querySelector('#contactBtn').addEventListener('click', () => {modal.classList.add('is-open');});
 document.querySelector('#closeBtn').addEventListener('click', () => {modal.classList.remove('is-open');});
+
+/* PWA 서비스 워커 등록 */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((err) => {
+      console.error('Service Worker registration failed:', err);
+    });
+  });
+}
